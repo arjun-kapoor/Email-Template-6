@@ -64,22 +64,28 @@ body{
 .thumbImg{
 	float:left;
 	margin-bottom:1px;
-	min-height:130px;
+	width:175px;
 }
+	.thumbImg img{
+		max-height:100%;	
+	}
 .yellowBg{
 	float:left;
+	width:175px;
 	background:#e3b73e;
-	padding:23px 15px 25px;
 }
 	.yellowBg p{
 		font-size:11px;
 		color:#fff;
 		margin-bottom:0;
 	}
+.yellowBg p, .greenBg p, .pinkBg p{
+	padding:0 15px 23px;	
+}
+	
 .greenBg{
 	float:left;
 	background:#4dd487;
-	padding:23px 15px 25px;
 }
 	.greenBg p{
 		font-size:11px;
@@ -89,7 +95,6 @@ body{
 .pinkBg{
 	float:left;
 	background:#dc3d66;
-	padding:23px 15px 25px;
 }
 	.pinkBg p{
 		font-size:11px;
@@ -447,6 +452,7 @@ h2 {
 	line-height:21px;
 	color:#fff;
 	margin-bottom:9px;
+	padding:23px 15px 0;
 }
 h3 {
 	font-size: 20px;
@@ -792,12 +798,12 @@ body.outlook p {
 
   table[class="body"] .right-text-pad,
   table[class="body"] .text-pad-right {
-    padding-left: 10px !important;
+    /*padding-left: 10px !important;*/
   }
 
   table[class="body"] .left-text-pad,
   table[class="body"] .text-pad-left {
-    padding-right: 10px !important;
+    /*padding-right: 10px !important;*/
   }
 
   table[class="body"] .hide-for-small,
@@ -810,6 +816,7 @@ body.outlook p {
     display: inherit !important;
   }
 }
+
 
   </style>
   <style>
@@ -890,28 +897,45 @@ body.outlook p {
     }
 
     table.columns .left-text-pad {
-      padding-left: 10px;
+      /*padding-left: 10px;*/
     }
 
     table.columns .right-text-pad {
-      padding-right: 10px;
+      /*padding-right: 10px;*/
     }
 
     @media only screen and (max-width: 600px) {
-
       table[class="body"] .right-text-pad {
-        padding-left: 10px !important;
+        /*padding-left: 10px !important;*/
       }
 
       table[class="body"] .left-text-pad {
-        padding-right: 10px !important;
+        /*padding-right: 10px !important;*/
       }
 	  
 	  p.lead, p.lede, p.leed{
 			line-height:24px;  
 	  }
     }
-
+	
+@media only screen and (max-width: 480px) {
+	.thumbImg{
+		margin-bottom:1px;
+	}
+		.thumbImg img{
+			max-height: 250px;
+		}	
+}
+@media only screen and (max-width: 360px) {
+		.thumbImg img{
+			max-height: 210px;
+		}	
+}
+@media only screen and (max-width: 320px) {
+		.thumbImg img{
+			max-height: 169px;
+		}	
+}
 	</style>
 </head>
 <body>
@@ -968,16 +992,16 @@ body.outlook p {
                           <td>
                           		<table width="100%" border="0" cellspacing="0" cellpadding="0" class="twelve columns">
                                   <tr>
-                                    <td class="four columns" style="padding-right:27px;">
+                                    <td class="four columns eleven columns right-text-pad">
                                     	
                                         <table width="100%" border="0" cellspacing="0" cellpadding="0">
                                           <tr>
                                             <td class="thumbImg" style="padding-bottom:0;">
-                                            	<img src="images/img1.jpg" width="175" height="130" alt="" />
+                                            	<img src="images/img1.jpg" alt="" />
                                             </td>
                                           </tr>
                                           <tr>
-                                            <td class="yellowBg" style="padding:26px 14px;">
+                                            <td class="yellowBg">
                                             	<h2>Lorem Ipsum is simply dummy</h2>
                                                 <p class="twelve">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
                                             </td>
@@ -985,16 +1009,16 @@ body.outlook p {
                                         </table>
 
                                     </td>
-                                    <td class="four columns" style="padding-right:27px;">
+                                    <td class="four columns eleven columns right-text-pad" style="padding-right:31px;">
                                     	
                                         <table width="100%" border="0" cellspacing="0" cellpadding="0">
                                           <tr>
                                             <td class="thumbImg" style="padding-bottom:0;">
-                                            	<img src="images/img2.jpg" width="175" height="130" alt="" />
+                                            	<img src="images/img2.jpg"  alt="" />
                                             </td>
                                           </tr>
                                           <tr>
-                                            <td class="greenBg" style="padding:26px 14px;">
+                                            <td class="greenBg">
                                             	<h2>Lorem Ipsum is simply dummy</h2>
                                                 <p class="twelve">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
                                             </td>
@@ -1002,16 +1026,16 @@ body.outlook p {
                                         </table>
 
                                     </td>
-                                    <td class="four columns" style="padding-right:27px;">
+                                    <td class="four columns eleven columns">
                                     	
                                         <table width="100%" border="0" cellspacing="0" cellpadding="0">
                                           <tr>
                                             <td class="thumbImg" style="padding-bottom:0;">
-                                            	<img src="images/img3.jpg" width="175" height="130" alt="" />
+                                            	<img src="images/img3.jpg" alt="" />
                                             </td>
                                           </tr>
                                           <tr>
-                                            <td class="pinkBg" style="padding:26px 14px;">
+                                            <td class="pinkBg">
                                             	<h2>Lorem Ipsum is simply dummy</h2>
                                                 <p class="twelve">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
                                             </td>
@@ -1068,7 +1092,7 @@ body.outlook p {
                       
                       <table class="twelve columns">
                         <tr>
-                          <td>
+                          <td style="padding-right:10px;">
                             <h5>TIPS</h5>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet.</p>
                           </td>
